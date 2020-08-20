@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+// SCSS/CSS Variables
+@import "vars";
+
+// Reset Browsers CSS
+@import "other/reset";
+
+
+// Mixins
+@import "other/mixins";
+
+// Utility CSS
+@import "other/utility";
+
+// Bootstrap 4 Grid
+@import "../vendors/bootstrap/bootstrap.min.css";
+
+
+
+// Core Styles -- must be latest
+@import "core";
+
+@import './layout/mainPage';
+@import './layout/other_pages.scss';
+@import './other/media';
+

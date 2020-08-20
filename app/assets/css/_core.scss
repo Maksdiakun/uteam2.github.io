@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap');
+a, label,button{
+    cursor: pointer;
+    outline: none !important;
+}
+a{
+    display: inline-block;
+}
+@media(min-width:1200){
+    .container{
+        max-width:1110px;
+    }
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333;
+    background-color: #F6F6F6;
+}
+main{
+    padding-bottom: 40px;
+    overflow: hidden;
+    padding: 43px 90px 0 240px;
+}
+
+p{
+    line-height: 140%; 
+}
+.my_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.red_btn{
+    @include main_btn;
+    @include transition;
+    background-color: #D12421;  
+    color: #fff !important;
+    width: 170px;
+    &:hover{
+        background-color: #333;
+        color: #fff !important;
+        svg path{
+            fill: #fff;
+        }
+    }
+}
+.black_btn{
+    @include main_btn;
+    color: #fff !important;
+    width: 215px;
+    background-color: #333;
+    @include transition;
+    &:hover{
+        background-color: #7B7B7B;
+    }
+}
+.white_btn{
+    @include main_btn;
+    color: #333 !important;
+    width: 215px;
+    background-color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+    @include transition;
+    svg{
+        margin-right: 10px;
+        @include transition;
+    }
+    &:hover{
+        background-color: #333;
+        color: #fff !important;
+        svg path{
+            fill: #fff;
+        }
+    }
+}
+.transparent_btn{
+    @include main_btn;
+    @include transition;
+    border: 1px solid #333333;
+    width: 220px;
+    &:hover{
+        background-color: #333;
+        color: #fff !important;
+        path{
+            stroke: #fff;
+        }
+    }
+}
+.grey_btn{
+    @include main_btn;
+    @include transition;
+    background-color: #E5E5E5;
+    width: 170px;
+    height: 52px;
+    svg{
+        margin-right: 10px;
+        @include transition;
+    }
+    &:hover{
+        color: #fff;
+        background-color: #333;
+        svg{
+            path{
+                stroke: #fff;
+            }
+        }
+    }
+}
+.just_btwn{
+    display: flex;
+    justify-content: space-between;
+}
+.just_center{
+    display: flex;
+    justify-content: center;
+}
+.align_center{
+    display: flex;
+    align-items: center;
+}
+h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.text_center{
+    text-align: center;
+}
+.more_btn{
+    color: #2D9CDB !important;
+    display: block;
+    width: fit-content; 
+}
+
+
+
+
+.input_file_wrap{
+    position: relative;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+}
+.thanks_modal_img{
+    img{
+        margin: 0 auto;
+
+    }
+   margin-bottom: 20px;
+}
+.thanks_modal{
+    p{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+}
+.menu a ,
+.drop_down_control,
+.header_lang a,
+.list_style a,
+.more_btn,
+.footer_contacts a,
+.footer_menu a,
+.close_form,
+.pagination a{
+    @include transition;
+    &:hover{
+        color: #D12421 !important;
+    }
+}

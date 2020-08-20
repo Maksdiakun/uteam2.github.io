@@ -1,0 +1,175 @@
+@media(max-width:1400px){
+    .question_side{
+        width: 300px;
+    }   
+}
+@media(max-width:1349px){
+    main{
+            padding: 43px 30px 0 160px;
+    }
+    .side_menu_wrap{
+        width: 130px;
+        padding: 0 10px 21px 10px;
+    }
+}
+@media(max-width:1199.9px){
+    .desc_header,.side_menu_wrap{
+        display: none;
+    }
+    .mobile_header{
+        display: block;
+    }
+    .question_side{
+        border-top: 1px solid #eaeaea;
+        border-radius: 0 0 0px 10px ;
+        .under_line{
+            display: block;
+
+        }
+        &_header{
+            border:none;
+        }
+    }
+    .question_side_wrap{
+        position: absolute;
+        right: -100vw;
+        top: 0;
+        z-index: 100;
+    }
+    main{
+        padding: 30px;
+    }
+    .list_type_1_price{
+        flex-shrink: 0;
+        flex-direction: column;
+     >a{
+        padding: 10px 30px;
+        display: flex;
+        opacity: 1;
+        width: auto;
+        color: #fff!important;
+        position: static !important;
+    }
+    p{
+        transform: none !important;
+        margin-bottom: 10px;
+    }
+    }
+}
+@media(max-width:767.8px){
+    .box_list>li{
+        flex-wrap: wrap;
+        padding: 10px;
+    >div{
+        width: 100% !important;
+        &:nth-child(2){
+            margin-top: 20px;
+        }
+    }
+    }
+    .balace_box{
+        margin-bottom: 20px;
+    }
+    .balace_box, .contact_box{
+        height: auto;
+    }
+    .payment_box>.align_center{
+        flex-wrap: wrap;
+    }
+    .payment_box_content{
+        width: 100%;
+    }
+    .payment_box .transparent_btn{
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .login{
+        &_red{
+            display: none;
+        }
+        &_main{
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 25px;
+            >p,img{
+                display: block;
+            }
+            >img{
+                width: 150px;
+                margin-top: 7vh;
+            }
+        }
+        &_form{
+            box-shadow: none;
+        }
+    }
+}
+@media(max-width:575.9px){
+    main{
+        padding: 15px 10px;
+    }
+    .promotion {
+        flex-wrap: wrap;
+       .main_cont{
+           width: 100%;
+       }
+       .add_cont{
+           width: 100%;
+       }
+    }
+    .additional_serv_item {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        &_btns{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+        }
+        &_text{
+            margin: 0;
+            margin-left: 15px;
+            max-width: calc(100% - 145px);
+        }
+    }
+    .list_type_1>li>div:first-child>p:first-child{
+        max-width: calc(100% - 140px);
+    }
+    .payment_tab_content{
+        flex-wrap: wrap;
+        >div{
+            width: calc(50% - 15px);
+            margin-bottom: 20px;
+            display: flex;
+        }
+        a{
+            width: 150px;
+        }
+    }
+    .my_contact_row{
+        flex-wrap: wrap;
+        >div{
+            width: 100%;
+        }
+    }
+    .my_contact_2 .my_contact_row{
+        margin-top: 0;
+     >div{
+        margin-bottom: 15px;
+    }
+    }
+    .modal-dialog{
+        max-width: 100%;
+        width: unset;
+    }
+    .message{
+        right: 10px;
+    }
+}
+@media(max-width:360px){
+    .tab_controls{
+        font-size: 16px;
+    }
+}
